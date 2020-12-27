@@ -1,0 +1,215 @@
+
+h4{
+    color:gray;
+    padding-left: 8%;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+
+.header, .about, .footer {
+    padding-right: 15px;
+    padding-left: 15px;
+    /* text-justify: center; */
+}
+
+/* Custom page header */
+
+.header {
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+nav{
+    padding-right: 8%;
+}
+
+
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+}
+
+.header :last-child {
+
+    margin-left: auto;
+    color: grey;
+}
+
+.nav-item .nav-link:hover {
+    background-color: #3CAEA3;
+    color: white;
+}
+
+
+
+
+
+.lead {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.intro {
+    padding-top: 20%;
+    padding-bottom: 35%;
+    text-align: center;
+}
+
+.bigger {
+    font-size: 115%;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.intro .btn, .more .btn {
+    padding: 14px 24px;
+    font-size: 21px;
+    font-weight: bolder;
+    background-color: white;
+    border: 2px solid #3CAEA3;
+    color: #3CAEA3;
+}
+
+.intro .btn:hover, .more .btn:hover {
+    background-color: #3CAEA3;
+    border: #3CAEA3;
+    color: white;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    /* Remove the padding we set earlier */
+    .header, .about, .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .header {
+        margin-bottom: 30px;
+    }
+}
+
+h2 {
+    color: #3CAEA3;
+    overflow: hidden;
+}
+
+.title1:after {
+    content: "";
+    display: inline-block;
+    height: 0.5em;
+    vertical-align: bottom;
+    width: 100%;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 3px solid #e5e5e5;
+    margin-left: 30px;
+}
+
+.row>*:first-child {
+    align-self: center;
+}
+.row>*:last-child {
+    padding-left: 7%;
+    align-self: center;
+}
+
+
+.para {
+    justify-self: center;
+    padding-top: 5%;
+    text-emphasis: weight;
+    padding-left: 5%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+}
+
+.about {
+    padding-bottom: 35%;
+}
+
+
+.title2:before {
+    /* padding-left: 50%; */
+    content: "";
+    display: inline-block;
+    height: 0.5em;
+    vertical-align: bottom;
+    margin-right: 40px;
+    border-top: 3px solid #e5e5e5;
+    width: 83%;
+}
+
+.timeline {
+    padding-top: 7%;
+}
+
+.edu {
+    padding-bottom: 35%;
+}
+
+.title3 {
+    text-align: center;
+    /* color: black; */
+}
+
+.title3 .p {
+    color: grey;
+    font-weight: light;
+    text-decoration: underline;
+}
+
+
+.buttons {
+    /* display: inline-block; */
+    padding-top: 10%;
+    text-align: center;
+    justify-items: center;
+}
+
+button {
+    width: 20%;
+    height: 20%;
+    border: none;
+    background: none;
+}
+
+button:hover {
+
+    animation: hvr-bob 5s infinite;
+}
+
+.more {
+    padding-top: 4%;
+    text-align: center;
+}
+
+
+/* Custom page footer */
+
+.ft {
+    padding-top: 10%;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}

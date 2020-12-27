@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, {Component} from 'react';
+import Fire from "./Fire";
+import Main from "./Main";
+
+
+
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+  
+    this.state = {
+      component: <Fire/>,
+    };
+  
+  }
+
+
+
+  componentDidMount() {
+    // Start counting when the page is loaded
+    this.timeoutHandle = setTimeout(() => {
+      // Add your logic for the transition
+      this.setState({ component: <Main /> });
+    }, 5000);
+  }
+  
+
+  componentWillUnmount() {
+    clearTimeout(this.timeoutHandle);
+  }
+
+
+  render() {
+    return this.state.component;
+  }
 }
-
-export default App;
