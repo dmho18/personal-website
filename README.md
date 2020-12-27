@@ -18,6 +18,6 @@ This was made possible by React and Bootstrap 4.
 The opening scene contains 6 themes correspond to 7 days of the week.
 
 Credit to opening scene: Satrio Yamanda https://codepen.io/yamanda/pen/RpNMaY 
-https://github.com/pajasevi/CSSnowflakes 
+https://github.com/pajasevi/CSSnowflakes <br/>
 Credit to timeline: https://www.bootdey.com/snippets/view/bs4-types-of-timelines 
 
