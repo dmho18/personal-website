@@ -64,8 +64,11 @@ nav{
     text-align: center;
 }
 
+.big{
+    font-size: 120%;
+}
 .bigger {
-    font-size: 115%;
+    font-size: 140%;
     font-weight: bolder;
     text-decoration: underline;
 }

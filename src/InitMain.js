@@ -52,7 +52,7 @@ export default class InitMain extends Component {
         <div class="intro" id="tab1">
           <h1 class="welcome">Hello and Welcome,</h1>
           <p class="lead">
-            My name is <span class="bigger">Danh Ho</span>.<br /> I enjoy
+            <span class="big">My name is</span> <span class="bigger">Danh Ho</span>.<br /> I enjoy
             building beautiful and highly functional applications, websites or
             any programming projects.
           </p>
@@ -72,7 +72,7 @@ export default class InitMain extends Component {
                 <p>
                   The interest in coding did not occur to me until I immigrated
                   to the U.S. <br />
-                  It is the curiousity toward computer that has pushed me to
+                  It is the curiousity toward coding that has pushed me to
                   pursue programming.
                 </p>
               </div>
@@ -101,7 +101,9 @@ export default class InitMain extends Component {
           <div class="edu-tl">
           <section id="timeline">
   
+            
             <div class="tl-item">
+              
               
               <div class="tl-bg" style={{backgroundColor: "#ffcf0c"}} >
                 <img class= "pcc-logo" src={pcc_logo} />
@@ -111,7 +113,9 @@ export default class InitMain extends Component {
               </div>
 
               <div class="tl-content">
+                <a href="https://pasadena.edu" target="_blank" rel="noopener noreferrer">
                 <h1>Pasadena City College <br/>(GPA: 3.7)</h1>
+                </a>
                 <p>Course Works:<br />
                 Mostly GEs, and some entry-level C++,<br/>
                 Java classes.
@@ -131,7 +135,9 @@ export default class InitMain extends Component {
               </div>
 
               <div class="tl-content">
+              <a href="https://www.ucsd.edu" target="_blank" rel="noopener noreferrer">
                 <h1>University of California, San Diego<br/> (GPA: 3.46)</h1>
+                </a>
                 <p>Relevant Course Works:<br/>
                 Advance Software Engineering, Advanced Data Struture, Machine Learning, Web Mining.
                 </p>
@@ -150,7 +156,9 @@ export default class InitMain extends Component {
               </div>
 
               <div class="tl-content">
+              <a href="https://www.carerev.com" target="_blank" rel="noopener noreferrer">
                 <h1>CareRev</h1>
+                </a>
                 <p>
                 Interface with staffs/clients on a daily basis, providing technological expertise. <br/>
                 Help tinker features in company's tool and web application.
