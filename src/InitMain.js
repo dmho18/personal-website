@@ -111,7 +111,7 @@ export default class InitMain extends Component {
               </div>
 
               <div class="tl-content">
-                <h1>Pasadena City College <br/>(GPA: 3.7)</h1>
+                <h1 class="pcc-font">Pasadena City College <br/>(GPA: 3.7)</h1>
                 
                 <p>Course Works:<br />
                 Mostly GEs, and some entry-level C++,<br/>
@@ -128,11 +128,11 @@ export default class InitMain extends Component {
               </div>
               
               <div class="tl-year">
-                <p class="f2 heading--sanSerif">2018 - 2020</p>
+                <p>2018 - 2020</p>
               </div>
 
               <div class="tl-content">
-                <h1>University of California, San Diego<br/> (GPA: 3.46)</h1>
+                <h1 class="ucsd-font">University of California, San Diego<br/> (GPA: 3.46)</h1>
                 <p>Relevant Course Works:<br/>
                 Advance Software Engineering, Advanced Data Struture, Machine Learning, Web Mining.
                 </p>
@@ -147,11 +147,11 @@ export default class InitMain extends Component {
               </div>
               
               <div class="tl-year">
-                <p class="f2 heading--sanSerif">2021 - Now</p>
+                <p>2021 - Now</p>
               </div>
 
               <div class="tl-content">
-                <h1>CareRev</h1>
+                <h1 class="carerev-font">CareRev</h1>
                 <p>
                 Interface with staffs/clients on a daily basis, providing technological expertise. <br/>
                 Help tinker features in company's tool and web application.
