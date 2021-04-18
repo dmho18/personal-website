@@ -95,7 +95,7 @@ export default class InitMain extends Component {
         </div>
 
         <div class="edu" id="tab3">
-          <h2 class="title2">Education</h2>
+          <h2 class="title2">Education <span class="grey">&</span> Experience</h2>
           <div class="line"></div>
 
           <div class="timeline">
@@ -143,7 +143,7 @@ export default class InitMain extends Component {
         </div>
 
         <div class="project" id="tab4">
-        <h2 class="title">Projects</h2>
+        <h2 class="title">Projects I've built</h2>
         <div class="line"></div>
 
           <div class="buttons">

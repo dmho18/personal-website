@@ -68,6 +68,12 @@ nav{
     text-decoration: underline;
 }
 
+.grey{
+    font-size: 70%;
+    color: lightgrey;
+}
+
+
 .intro .btn, .more .btn {
     padding: 14px 24px;
     font-size: 21px;
