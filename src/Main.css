@@ -2,6 +2,12 @@
 h4{
     color:gray;
     padding-left: 8%;
+    font-family: Gidolinya;
+}
+
+.nav-item{
+    font-size: x-large;
+    font-family: Gidole;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -49,7 +55,8 @@ nav{
 
 
 .para p{
-    font-size: large;
+    font-size: 1.4em;
+    font-family: Gidole;
 }
 
 
@@ -68,9 +75,10 @@ nav{
     font-size: 120%;
 }
 .bigger {
-    font-size: 140%;
+    font-size: 145%;
     font-weight: bolder;
     text-decoration: underline;
+    font-family: Gidole;
 }
 
 .grey{
@@ -115,7 +123,7 @@ nav{
 h2 {
     color: #3CAEA3;
     overflow: hidden;
-    /* font-size: 100px; */
+    font-family: Gidole;
 }
 
 .title{
@@ -144,10 +152,12 @@ h2 {
 
 .row>*:first-child {
     align-self: center;
+    text-align: justify;
 }
 .row>*:last-child {
-    padding-left: 10%;
+    padding-left: 5%;
     align-self: center;
+    text-align: justify;
 }
 
 
@@ -218,15 +228,4 @@ footer {
     padding-top: 19px;
     color: #777;
     border-top: 1px solid #e5e5e5;
-}
-
-/* a{
-    text-decoration: none;
-    background-color: transparent !important;
-    color: transparent;
-} */
-.edu a { 
-    outline: 0; 
-    border: none;
-    text-decoration: none;
 }
