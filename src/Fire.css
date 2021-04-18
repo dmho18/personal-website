@@ -421,15 +421,14 @@ https://pajasevi.github.io/CSSnowflakes/
 
 .spark {
 
-    /* display:none; */
     color: #DE4A00;
     font-size: 50px;
     font-family: 'Helvetica', sans-serif;
     position: absolute;
     width: 4px;
     height: 4px;
-    border-radius: 30%;
-    box-shadow: 0 0 5px #AB000B;
+    border-radius: 70%;
+    filter: drop-shadow(0 0 6px orange);
     
     top:100%;
     z-index:9999;
