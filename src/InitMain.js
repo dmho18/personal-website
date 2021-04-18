@@ -64,7 +64,7 @@ export default class InitMain extends Component {
         </div>
 
         <div class="about" id="tab2">
-          <h2 class="title">About Me</h2>
+          <h2 class="title">About Me 🙂</h2>
           <div class="line"></div>
           <div class="row">
             <div class="col-lg-6">
@@ -96,7 +96,7 @@ export default class InitMain extends Component {
         </div>
 
         <div class="edu" id="tab3">
-          <h2 class="title2">Education <span class="grey">&</span> Experience</h2>
+          <h2 class="title2">Education <span class="grey">&</span> Experience 📖</h2>
           <div class="line"></div>
           <div class="edu-tl">
           <section id="timeline">
@@ -166,7 +166,7 @@ export default class InitMain extends Component {
         </div>
 
         <div class="project" id="tab4">
-        <h2 class="title3">Projects I've built</h2>
+        <h2 class="title3">Projects I've built 🔧</h2>
         <div class="line"></div>
 
           <div class="buttons">
