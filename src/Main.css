@@ -140,15 +140,16 @@ img {
 }
 
 
-.title2:before {
-    /* padding-left: 50%; */
+.title2:after {
     content: "";
     display: inline-block;
     height: 0.5em;
     vertical-align: bottom;
-    margin-right: 40px;
+    width: 100%;
+    margin-right: -100%;
+    margin-left: 10px;
     border-top: 3px solid #e5e5e5;
-    width: 83%;
+    margin-left: 30px;
 }
 
 .timeline {
