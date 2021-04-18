@@ -11,7 +11,7 @@ export default class Game extends Component {
   return (
     <div class="container">
       <div class="header fixed-top">
-      <h4>dmho@ucsd.edu</h4>
+      <h4>danhmho312@gmail.com</h4>
         <nav>
           <ul class="nav nav-pills">
             <li class="nav-item">
