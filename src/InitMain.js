@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import pic from "./assets/png/vietnam_corner.png";
 import gol_button from "./assets/png/gameoflife.png";
 import gc_button from "./assets/png/graphingcal.png";
+import pcc_logo from "./assets/png/pcclogo.png";
+import ucsd_logo from "./assets/png/ucsdlogo.png";
+import carerev_logo from "./assets/png/carerev.png";
 
 import {Link} from "react-router-dom";
 
@@ -53,13 +56,11 @@ export default class InitMain extends Component {
             building beautiful and highly functional applications, websites or
             any programming projects.
           </p>
-          {/* <p> */}
             <Link to={"/resume"}>
             <a class="btn btn-lg btn-success" href="" role="button">
               My Resume
             </a>
             </Link>
-          {/* </p> */}
         </div>
 
         <div class="about" id="tab2">
@@ -97,53 +98,74 @@ export default class InitMain extends Component {
         <div class="edu" id="tab3">
           <h2 class="title2">Education <span class="grey">&</span> Experience</h2>
           <div class="line"></div>
-
-          <div class="timeline">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="main-timeline">
-                    <a href="https://pasadena.edu" target="_blank" rel="noopener noreferrer" class="timeline">
-                      <div class="timeline-icon">
-                        <span class="icon-pcclogo"></span>
-                      </div>
-                      <div class="timeline-content">
-                        <h3 class="title">2015 - 2018</h3>
-                        <p class="description">
-                          <span class="bigger">Pasadena City College </span>
-                          (GPA: 3.7) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                          Course Works: 
-                          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                          Mostly GEs, and some entry-level C++, <br />
-                          Java classes.
-                        </p>
-                      </div>
-                    </a>
-                    <a href="https://www.ucsd.edu" target="_blank" rel="noopener noreferrer" class="timeline">
-                      <div class="timeline-icon">
-                        <span class="icon-ucsdlogo"></span>
-                      </div>
-                      <div class="timeline-content">
-                        <h3 class="title">2018 - 2020</h3>
-                        <p class="description">
-                          <span class="bigger">
-                            University of California, San Diego
-                          </span>{" "}(GPA: 3.4)
-                        Relevant Course Works: Advance Software
-                          Engineering, Advanced Data Struture, Machine Learning,
-                          Web Mining.
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
+          <div class="edu-tl">
+          <section id="timeline">
+  
+            <div class="tl-item">
+              
+              <div class="tl-bg" style={{backgroundColor: "#ffcf0c"}} >
+                <img class= "pcc-logo" src={pcc_logo} />
               </div>
+              <div class="tl-year">
+                <p>2015 - 2018</p>
+              </div>
+
+              <div class="tl-content">
+                <h1>Pasadena City College <br/>(GPA: 3.7)</h1>
+                <p>Course Works:<br />
+                Mostly GEs, and some entry-level C++,<br/>
+                Java classes.
+                </p>
+              </div>
+
             </div>
+
+            <div class="tl-item">
+              
+              <div class="tl-bg" style={{backgroundColor: "#00C6D7"}}>
+                <img src={ucsd_logo} />
+              </div>
+              
+              <div class="tl-year">
+                <p class="f2 heading--sanSerif">2018 - 2020</p>
+              </div>
+
+              <div class="tl-content">
+                <h1>University of California, San Diego<br/> (GPA: 3.46)</h1>
+                <p>Relevant Course Works:<br/>
+                Advance Software Engineering, Advanced Data Struture, Machine Learning, Web Mining.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="tl-item">
+              
+              <div class="tl-bg" style={{backgroundColor: "#aef2d8" }}>
+                <img src={carerev_logo} />
+              </div>
+              
+              <div class="tl-year">
+                <p class="f2 heading--sanSerif">2021 - Now</p>
+              </div>
+
+              <div class="tl-content">
+                <h1>CareRev</h1>
+                <p>
+                Interface with staffs/clients on a daily basis, providing technological expertise. <br/>
+                Help tinker features in company's tool and web application.
+                </p>
+              </div>
+
+            </div>
+          </section>
           </div>
+
+
         </div>
 
         <div class="project" id="tab4">
-        <h2 class="title">Projects I've built</h2>
+        <h2 class="title3">Projects I've built</h2>
         <div class="line"></div>
 
           <div class="buttons">

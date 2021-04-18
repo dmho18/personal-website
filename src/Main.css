@@ -48,7 +48,9 @@ nav{
 }
 
 
-
+.para p{
+    font-size: large;
+}
 
 
 .lead {
@@ -110,7 +112,7 @@ nav{
 h2 {
     color: #3CAEA3;
     overflow: hidden;
-    font-size: 100px;
+    /* font-size: 100px; */
 }
 
 .title{
@@ -119,6 +121,10 @@ h2 {
 
 .title2{
     text-align: end;
+    font-size: 50px;
+}
+.title3{
+    text-align: center;
     font-size: 50px;
 }
 
@@ -130,13 +136,14 @@ h2 {
     width: 100%;
     margin-left: 10px;
     border-top: 2px solid #d3f6e5;
+    padding-bottom: 50px;
 }
 
 .row>*:first-child {
     align-self: center;
 }
 .row>*:last-child {
-    padding-left: 13%;
+    padding-left: 10%;
     align-self: center;
 }
 
