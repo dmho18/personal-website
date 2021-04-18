@@ -6,7 +6,8 @@ h4{
 }
 
 .nav-item{
-    font-size: x-large;
+    /* font-size: x-large; */
+    font-size: 1.4rem;
     font-family: Gidole;
 }
 
@@ -175,7 +176,7 @@ img {
 }
 
 .about {
-    padding-bottom: 35%;
+    padding-bottom: 25%;
 }
 
 .timeline {
@@ -183,7 +184,7 @@ img {
 }
 
 .edu {
-    padding-bottom: 35%;
+    padding-bottom: 25%;
 }
 
 
