@@ -47,7 +47,7 @@ export default class InitMain extends Component {
         </div>
 
         <div class="intro" id="tab1">
-          <h1>Hello and Welcome,</h1>
+          <h1 class="welcome">Hello and Welcome,</h1>
           <p class="lead">
             My name is <span class="bigger">Danh Ho</span>.<br /> I enjoy
             building beautiful and highly functional applications, websites or
@@ -63,7 +63,8 @@ export default class InitMain extends Component {
         </div>
 
         <div class="about" id="tab2">
-          <h2 class="title1">About Me</h2>
+          <h2 class="title">About Me</h2>
+          <div class="line"></div>
           <div class="row">
             <div class="col-lg-6">
               <div class="para">
@@ -95,7 +96,7 @@ export default class InitMain extends Component {
 
         <div class="edu" id="tab3">
           <h2 class="title2">Education</h2>
-
+          <div class="line"></div>
 
           <div class="timeline">
             <div class="container">
@@ -142,9 +143,8 @@ export default class InitMain extends Component {
         </div>
 
         <div class="project" id="tab4">
-          <div class="title3">
-            <h2 class="p"> Projects that I've built </h2>
-          </div>
+        <h2 class="title">Projects</h2>
+        <div class="line"></div>
 
           <div class="buttons">
               <Link to={"/game"}>

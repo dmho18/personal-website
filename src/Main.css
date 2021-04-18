@@ -96,28 +96,41 @@ nav{
     }
 }
 
+.welcome{
+    font-size: 50px;
+}
+
+
 h2 {
     color: #3CAEA3;
     overflow: hidden;
+    font-size: 100px;
 }
 
-.title1:after {
+.title{
+    font-size: 50px;
+}
+
+.title2{
+    text-align: end;
+    font-size: 50px;
+}
+
+.line {
     content: "";
     display: inline-block;
     height: 0.5em;
     vertical-align: bottom;
     width: 100%;
-    margin-right: -100%;
     margin-left: 10px;
-    border-top: 3px solid #e5e5e5;
-    margin-left: 30px;
+    border-top: 2px solid #d3f6e5;
 }
 
 .row>*:first-child {
     align-self: center;
 }
 .row>*:last-child {
-    padding-left: 7%;
+    padding-left: 13%;
     align-self: center;
 }
 
@@ -139,36 +152,12 @@ img {
     padding-bottom: 35%;
 }
 
-
-.title2:after {
-    content: "";
-    display: inline-block;
-    height: 0.5em;
-    vertical-align: bottom;
-    width: 100%;
-    margin-right: -100%;
-    margin-left: 10px;
-    border-top: 3px solid #e5e5e5;
-    margin-left: 30px;
-}
-
 .timeline {
     padding-top: 7%;
 }
 
 .edu {
     padding-bottom: 35%;
-}
-
-.title3 {
-    text-align: center;
-    /* color: black; */
-}
-
-.title3 .p {
-    color: grey;
-    font-weight: light;
-    text-decoration: underline;
 }
 
 
