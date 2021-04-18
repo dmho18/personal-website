@@ -102,9 +102,7 @@ export default class InitMain extends Component {
           <section id="timeline">
   
             
-            <div class="tl-item">
-              
-              
+          <a href="https://pasadena.edu" target="_blank" rel="noopener noreferrer" class="tl-item">
               <div class="tl-bg" style={{backgroundColor: "#ffcf0c"}} >
                 <img class= "pcc-logo" src={pcc_logo} />
               </div>
@@ -113,18 +111,17 @@ export default class InitMain extends Component {
               </div>
 
               <div class="tl-content">
-                <a href="https://pasadena.edu" target="_blank" rel="noopener noreferrer">
                 <h1>Pasadena City College <br/>(GPA: 3.7)</h1>
-                </a>
+                
                 <p>Course Works:<br />
                 Mostly GEs, and some entry-level C++,<br/>
                 Java classes.
                 </p>
               </div>
 
-            </div>
+            </a>
 
-            <div class="tl-item">
+            <a href="https://www.ucsd.edu" target="_blank" rel="noopener noreferrer" class="tl-item" class="tl-item">
               
               <div class="tl-bg" style={{backgroundColor: "#00C6D7"}}>
                 <img src={ucsd_logo} />
@@ -135,17 +132,15 @@ export default class InitMain extends Component {
               </div>
 
               <div class="tl-content">
-              <a href="https://www.ucsd.edu" target="_blank" rel="noopener noreferrer">
                 <h1>University of California, San Diego<br/> (GPA: 3.46)</h1>
-                </a>
                 <p>Relevant Course Works:<br/>
                 Advance Software Engineering, Advanced Data Struture, Machine Learning, Web Mining.
                 </p>
               </div>
 
-            </div>
+            </a>
 
-            <div class="tl-item">
+            <a href="https://www.carerev.com" target="_blank" rel="noopener noreferrer" class="tl-item" class="tl-item">
               
               <div class="tl-bg" style={{backgroundColor: "#aef2d8" }}>
                 <img src={carerev_logo} />
@@ -156,16 +151,14 @@ export default class InitMain extends Component {
               </div>
 
               <div class="tl-content">
-              <a href="https://www.carerev.com" target="_blank" rel="noopener noreferrer">
                 <h1>CareRev</h1>
-                </a>
                 <p>
                 Interface with staffs/clients on a daily basis, providing technological expertise. <br/>
                 Help tinker features in company's tool and web application.
                 </p>
               </div>
 
-            </div>
+            </a>
           </section>
           </div>
 

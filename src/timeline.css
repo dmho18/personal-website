@@ -14,6 +14,14 @@ https://codepen.io/jeffglenn/pen/KNYoKa
     display: flex;
 }
 
+#timeline a{
+    outline: 0; 
+    border: none;
+    text-decoration: none;
+    -webkit-tap-highlight-color: white;
+    color: inherit;
+}
+
 .tl-item {
     transform: translate3d(0, 0, 0);
     position: relative;
@@ -109,4 +117,7 @@ https://codepen.io/jeffglenn/pen/KNYoKa
   
 .tl-content p {
     font-size: x-large;
+}
+#timeline p{
+    color: white;
 }
