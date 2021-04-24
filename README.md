@@ -21,3 +21,8 @@ Credit to opening scene: Satrio Yamanda https://codepen.io/yamanda/pen/RpNMaY
 https://github.com/pajasevi/CSSnowflakes <br/>
 Credit to timeline: https://codepen.io/jeffglenn/pen/KNYoKa
 
+## Set Up
+```npm install && nvm install```
+```npm install --save react-router-dom```
+```npm start```
+
