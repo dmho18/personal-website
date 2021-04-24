@@ -5,6 +5,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Link to My Website: https://danhho-f7d53.web.app
 
 
+## Set Up
+```npm install && nvm install```
+
+```npm install --save react-router-dom```
+
+```npm start```
+
+
 ## About the website
 
 This website serves as a portfolio to showcase information about me.
@@ -21,10 +29,4 @@ Credit to opening scene: Satrio Yamanda https://codepen.io/yamanda/pen/RpNMaY
 https://github.com/pajasevi/CSSnowflakes <br/>
 Credit to timeline: https://codepen.io/jeffglenn/pen/KNYoKa
 
-## Set Up
-```npm install && nvm install```
-
-```npm install --save react-router-dom```
-
-```npm start```
 
