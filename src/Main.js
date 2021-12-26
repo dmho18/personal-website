@@ -8,6 +8,7 @@ import Calc from "./calc";
 import InitMain from "./InitMain";
 import Resume from "./resume";
 import Projects from "./projects";
+import VirtualBackground from "./virtualbg"
 
 import "./Main.css";
 import "./timeline.css";
@@ -32,6 +33,10 @@ export default class Main extends Component {
           <Route path="/calc">
             <ScrollToTop />
             <Calc />
+          </Route>
+          <Route path="/virtualbg">
+            <ScrollToTop />
+            <VirtualBackground />
           </Route>
           <Route path="/">
             <ScrollToTop />
