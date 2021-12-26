@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import pic from "./assets/png/vietnam_corner.png";
 import gol_button from "./assets/png/gameoflife.png";
 import gc_button from "./assets/png/graphingcal.png";
+import vb_button from "./assets/png/virtualbg.png";
+
 import pcc_logo from "./assets/png/pcclogo.png";
 import ucsd_logo from "./assets/png/ucsdlogo.png";
 import carerev_logo from "./assets/png/carerev.png";
@@ -178,6 +180,11 @@ export default class InitMain extends Component {
             <Link to={"/calc"}>
             <button class="button2" type="submit" name="gc" value="gc">
               <img src={gc_button} />
+            </button>
+            </Link>
+            <Link to={"/virtualbg"}>
+            <button type="button">
+              <img src={vb_button} />
             </button>
             </Link>
           </div>
