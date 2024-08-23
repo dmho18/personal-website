@@ -72,10 +72,8 @@ export default class InitMain extends Component {
             <div class="col-lg-6">
               <div class="para">
                 <p>
-                  The interest in coding did not occur to me until I immigrated
-                  to the U.S. <br />
-                  It is the curiousity toward coding that has pushed me to
-                  pursue programming.
+                  👋 Hello there! I'm a passionate software developer on a mission to craft innovative solutions and bring ideas to life through code. <br />
+                  📷 I love visiting new places, taking photos of the scenary and the culture. Below are some pictures of the country where I was born in - Vietnam.
                 </p>
               </div>
             </div>
@@ -83,11 +81,10 @@ export default class InitMain extends Component {
               <div class="para">
                 <p>
                   <span class="bigger">Danh Ho</span>: &#x0007B; <br />
-                  &nbsp; love:&emsp;&emsp;&emsp;&nbsp;[boba, backpacking];{" "}
+                  &nbsp; love:&emsp;&emsp;&emsp;&nbsp;[boba, traveling, backpacking];{" "}
                   <br />
-                  &nbsp; language:&emsp;[english, chinese, vietnamese]; <br />
-                  {/* &nbsp; status: &emsp;&emsp;[seeking full-time]; <br /> */}
-                  &nbsp; skills: &emsp;&emsp;&nbsp; [C++, Python, Java, Node.js,
+                  &nbsp; languages:&emsp;[English, Chinese, Vietnamese]; <br />
+                  &nbsp; skills: &emsp;&emsp;&nbsp; [Ruby on Rails, C++, Python,
                   React]; <br />
                   &#x0007D;
                 </p>
@@ -109,28 +106,27 @@ export default class InitMain extends Component {
                 <img class= "pcc-logo" src={pcc_logo} />
               </div>
               <div class="tl-year">
-                <p>2015 - 2018</p>
+                <p>2018</p>
               </div>
 
               <div class="tl-content">
                 <h1 class="pcc-font">Pasadena City College <br/>(GPA: 3.7)</h1>
                 
-                <p>Course Works:<br />
-                Mostly GEs, and some entry-level C++,<br/>
-                Java classes.
+                <p>Relevant Course Works:<br />
+                Java, C++  classes and projects<br/>
                 </p>
               </div>
 
             </a>
 
-            <a href="https://www.ucsd.edu" target="_blank" rel="noopener noreferrer" class="tl-item" class="tl-item">
+            <a href="https://www.ucsd.edu" target="_blank" rel="noopener noreferrer" class="tl-item">
               
               <div class="tl-bg" style={{backgroundColor: "#00C6D7"}}>
                 <img src={ucsd_logo} />
               </div>
               
               <div class="tl-year">
-                <p>2018 - 2020</p>
+                <p>2020</p>
               </div>
 
               <div class="tl-content">
@@ -142,21 +138,22 @@ export default class InitMain extends Component {
 
             </a>
 
-            <a href="https://www.carerev.com" target="_blank" rel="noopener noreferrer" class="tl-item" class="tl-item">
+            <a href="https://www.carerev.com" target="_blank" rel="noopener noreferrer" class="tl-item">
               
               <div class="tl-bg" style={{backgroundColor: "#aef2d8" }}>
                 <img src={carerev_logo} />
               </div>
               
               <div class="tl-year">
-                <p>2021 - Now</p>
+                <p>2021 - 2023</p>
               </div>
 
               <div class="tl-content">
                 <h1 class="carerev-font">CareRev</h1>
                 <p>
-                Interface with staffs/clients on a daily basis, providing technological expertise. <br/>
-                Help tinker features in company's tool and web application.
+                Worked as a Support Engineer and Associate Software Engineer for 2.5 years.<br/>
+                Provided Backend implementations and patches to existing and new features.
+                Main Language: Ruby on Rails.
                 </p>
               </div>
 
@@ -168,7 +165,7 @@ export default class InitMain extends Component {
         </div>
 
         <div class="project" id="tab4">
-        <h2 class="title3">Projects I've built 🔧</h2>
+        <h2 class="title3">Projects 🔧</h2>
         <div class="line"></div>
 
           <div class="buttons">

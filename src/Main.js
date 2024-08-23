@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Routes } from "react-router-dom";
 
 import ScrollToTop from "./scroll";
 
@@ -17,32 +17,14 @@ export default class Main extends Component {
   render() {
     return (
       <Router>
-        <Switch>
-          <Route path="/projects">
-            <ScrollToTop />
-            <Projects />
-          </Route>
-          <Route path="/resume">
-            <ScrollToTop />
-            <Resume />
-          </Route>
-          <Route path="/game">
-            <ScrollToTop />
-            <Game />
-          </Route>
-          <Route path="/calc">
-            <ScrollToTop />
-            <Calc />
-          </Route>
-          <Route path="/virtualbg">
-            <ScrollToTop />
-            <VirtualBackground />
-          </Route>
-          <Route path="/">
-            <ScrollToTop />
-            <InitMain />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/projects" element={<><ScrollToTop/><Projects/></>}/>
+          <Route path="/resume" element={<><ScrollToTop/><Resume/></>}/>
+          <Route path="/game" element={<><ScrollToTop/><Game/></>}/>
+          <Route path="/calc" element={<><ScrollToTop/><Calc/></>}/>
+          <Route path="/virtualbg" element={<><ScrollToTop/><VirtualBackground/></>}/>
+          <Route path="/" element={<><ScrollToTop/><InitMain/></>}/>
+        </Routes>
       </Router>
     );
   }
