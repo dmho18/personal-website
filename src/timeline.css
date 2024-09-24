@@ -9,8 +9,7 @@ https://codepen.io/jeffglenn/pen/KNYoKa
 #timeline {
     margin-left: auto;
     margin-right: auto;
-    
-    width: 95%;
+    width: 94%;
     display: flex;
 }
 
@@ -20,13 +19,14 @@ https://codepen.io/jeffglenn/pen/KNYoKa
     text-decoration: none;
     -webkit-tap-highlight-color: white;
     color: inherit;
+    border-radius: 50px;
 }
 
 .tl-item {
     transform: translate3d(0, 0, 0);
     position: relative;
     width: 33.33%;
-    height: 100vh;
+    height: 96vh;
     min-height: 600px;
     color: #fff;
     overflow: hidden;

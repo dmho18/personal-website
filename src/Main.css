@@ -6,7 +6,6 @@ h4{
 }
 
 .nav-item{
-    /* font-size: x-large; */
     font-size: 1.4rem;
     font-family: Gidole;
 }
@@ -16,7 +15,6 @@ h4{
 .header, .about, .footer {
     padding-right: 15px;
     padding-left: 15px;
-    /* text-justify: center; */
 }
 
 /* Custom page header */
@@ -68,7 +66,7 @@ nav{
 
 .intro {
     padding-top: 20%;
-    padding-bottom: 22%;
+    padding-bottom: 195px;
     text-align: center;
 }
 
@@ -181,6 +179,7 @@ img {
 
 .timeline {
     padding-top: 7%;
+    border-radius: 25px
 }
 
 .edu {
