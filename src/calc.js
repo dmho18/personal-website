@@ -32,6 +32,7 @@ export default class Calc extends Component {
       </div>
       <div class="intro">
         <h1>Graphing Calculator</h1>
+        <h2>(C++)</h2>
       </div>
       <div class="description">
         <h2>How to Use</h2>

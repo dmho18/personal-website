@@ -33,6 +33,7 @@ export default class Game extends Component {
       </div>
       <div class="intro">
         <h1>Conway's Game Of Life</h1>
+        <h2>(C++)</h2>
       </div>
       <div class="description">
         <h2>What is Game of Life?</h2>

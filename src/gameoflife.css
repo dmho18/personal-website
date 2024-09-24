@@ -81,6 +81,6 @@ input {
 
 .loadResult .btn:hover{
     background-color: #3CAEA3;
-    border: #3CAEA3;
+    border: 2px solid #3CAEA3;
     color: white;
 }

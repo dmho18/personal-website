@@ -68,7 +68,7 @@ nav{
 
 .intro {
     padding-top: 20%;
-    padding-bottom: 35%;
+    padding-bottom: 22%;
     text-align: center;
 }
 
@@ -99,7 +99,7 @@ nav{
 
 .intro .btn:hover, .more .btn:hover {
     background-color: #3CAEA3;
-    border: #3CAEA3;
+    border: 2px solid #3CAEA3;
     color: white;
 }
 

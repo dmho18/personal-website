@@ -121,6 +121,7 @@ export default class VirtualBackground extends Component {
         </div>
         <div class="intro">
           <h1>Create a Virtual Background</h1>
+          <h2>(Python with DeepLab Model)</h2>
         </div>
         <div class="description" style={{ paddingBottom: "9vh" }}>
           <h2>Introduction</h2>

@@ -3,6 +3,7 @@ import pic from "./assets/png/vietnam_corner.png";
 import gol_button from "./assets/png/gameoflife.png";
 import gc_button from "./assets/png/graphingcal.png";
 import vb_button from "./assets/png/virtualbg.png";
+import pr_button from "./assets/png/predict.png"
 
 import pcc_logo from "./assets/png/pcclogo.png";
 import ucsd_logo from "./assets/png/ucsdlogo.png";
@@ -39,7 +40,7 @@ export default class InitMain extends Component {
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#tab3" role="tab">
-                  Education
+                  Experience
                 </a>
               </li>
               <li class="nav-item">
@@ -73,7 +74,7 @@ export default class InitMain extends Component {
               <div class="para">
                 <p>
                   👋 Hello there! I'm a passionate software developer on a mission to craft innovative solutions and bring ideas to life through code. <br />
-                  📷 I love visiting new places, taking photos of the scenary and the culture. Below are some pictures of the country where I was born in - Vietnam.
+                  📷 I love visiting new places, taking photos of the scenary and the culture. Below are some pictures I took when traveling around Vietnam.
                 </p>
               </div>
             </div>
@@ -84,7 +85,7 @@ export default class InitMain extends Component {
                   &nbsp; love:&emsp;&emsp;&emsp;&nbsp;[boba, traveling, backpacking];{" "}
                   <br />
                   &nbsp; languages:&emsp;[English, Chinese, Vietnamese]; <br />
-                  &nbsp; skills: &emsp;&emsp;&nbsp; [Ruby on Rails, C++, Python,
+                  &nbsp; skills: &emsp;&emsp;&nbsp; [Ruby, Rails, C++, Python,
                   React]; <br />
                   &#x0007D;
                 </p>
@@ -151,9 +152,9 @@ export default class InitMain extends Component {
               <div class="tl-content">
                 <h1 class="carerev-font">CareRev</h1>
                 <p>
-                Worked as a Support Engineer and Associate Software Engineer for 2.5 years.<br/>
-                Provided Backend implementations and patches to existing and new features.
-                Main Language: Ruby on Rails.
+                Worked as a Support Engineer and Associate Software Engineer for over 2 years.<br/>
+                Provided software implementations and patches to existing and new features.
+                Main Stacks: Ruby, Ruby on Rails.
                 </p>
               </div>
 
@@ -182,6 +183,11 @@ export default class InitMain extends Component {
             <Link to={"/virtualbg"}>
             <button type="button">
               <img src={vb_button} />
+            </button>
+            </Link>
+            <Link to={"/predict"}>
+            <button type="button">
+              <img src={pr_button} />
             </button>
             </Link>
           </div>
