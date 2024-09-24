@@ -109,13 +109,6 @@ export default class VirtualBackground extends Component {
                   </a>
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link to={"/projects"} style={{ textDecoration: "none" }}>
-                  <a class="nav-link" data-toggle="tab" href="#tab3" role="tab">
-                    More Projects
-                  </a>
-                </Link>
-              </li>
             </ul>
           </nav>
         </div>

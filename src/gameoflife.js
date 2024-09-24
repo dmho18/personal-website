@@ -21,13 +21,6 @@ export default class Game extends Component {
               </a>
               </Link>
             </li>
-            <li class="nav-item">
-            <Link to={"/projects"} style={{ textDecoration: 'none' }}>
-              <a class="nav-link" data-toggle="tab" role="tab">
-                More Projects
-              </a>
-              </Link>
-            </li>
           </ul>
         </nav>
       </div>
