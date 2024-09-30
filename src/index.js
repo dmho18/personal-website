@@ -14,7 +14,6 @@ import './assets/css/hover.css';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    {/* <Fire /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

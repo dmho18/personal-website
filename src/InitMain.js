@@ -3,25 +3,68 @@ import pic from "./assets/png/vietnam_corner.png";
 import gol_button from "./assets/png/gameoflife.png";
 import gc_button from "./assets/png/graphingcal.png";
 import vb_button from "./assets/png/virtualbg.png";
-import pr_button from "./assets/png/predict.png"
-
+import pr_button from "./assets/png/predict.png";
+import fb_button from "./assets/png/feedback.png";
+import close_btn from "./assets/png/close-window.png"
+import send_btn from "./assets/png/send.png"
 import pcc_logo from "./assets/png/pcclogo.png";
 import ucsd_logo from "./assets/png/ucsdlogo.png";
 import carerev_logo from "./assets/png/carerev.png";
 
 import {Link} from "react-router-dom";
+import emailjs from 'emailjs-com';
+import AOS from "aos";
+
 
 import "./Main.css";
 import "./timeline.css";
 
+
 export default class InitMain extends Component {
+  constructor(){
+    super();
+    this.expandForm = this.expandForm.bind(this);
+    this.collapseForm = this.collapseForm.bind(this);
+    this.sendEmail = this.sendEmail.bind(this);
+  }
+
+  expandForm (){
+    document.getElementById("form-holder").style.display = "block";
+    document.getElementById("fb-btn").style.display = "none";
+  }
+  collapseForm(){
+    document.getElementById("form-holder").style.display = "none";
+    document.getElementById("fb-btn").style.display = "block";
+  }
+  clearLastFb (){
+    document.getElementById('fbText').value = ""
+  }
+  sendEmail(e) {
+    const msg = document.getElementById("fbText").value.trim();
+    e.preventDefault();    // the email won't send without it
+    if(msg == ""){
+      alert("Please type message before sending.");
+      return
+    }
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+      .then((result) => {
+          this.collapseForm();
+          this.clearLastFb();
+          alert("Feeback sent. Thank you!");
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
+  
   render() {
+    AOS.init()
     return (
+      
       <div class="container">
+        <head><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/></head>
         <div class="header fixed-top">
           <h4>danhmho312@gmail.com</h4>
-
-          <nav>
+          <nav class="navbar">
             <ul class="nav nav-pills">
               <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#tab1" role="tab">
@@ -29,25 +72,28 @@ export default class InitMain extends Component {
                 </a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  data-toggle="dropdown"
-                  href="#tab2"
-                  role="tab"
-                >
-                  About
+                <a class="nav-link" data-toggle="tab" href="#tab2" role="tab">
+                  Projects
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#tab3" role="tab">
-                  Experience
+                  About
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#tab4" role="tab">
-                  Projects
+                  Experience
                 </a>
               </li>
+              <li class="nav-item">
+                <Link to="/resume" style={{ textDecoration: 'none' }}>
+                <a class="nav-link" data-toggle="tab" role="tab">
+                  Resume
+                </a>
+                </Link>
+              </li>
+
             </ul>
           </nav>
         </div>
@@ -55,25 +101,83 @@ export default class InitMain extends Component {
         <div class="intro" id="tab1">
           <h1 class="welcome">Hello and Welcome,</h1>
           <p class="lead">
-            <span class="big">My name is</span> <span class="bigger">Danh Ho</span>.<br /> I enjoy
-            building beautiful and highly functional applications, websites or
-            any programming projects.
+            <span class="big">My name is</span> <span class="bigger">Danh</span>.
+            <br />
+            <div class="exp">This page was made possible by React, Javascript, HTML, CSS and Bootstrap </div>
           </p>
-            <Link to={"/resume"}>
-            <a class="btn btn-lg btn-success" href="" role="button">
-              My Resume
-            </a>
-            </Link>
+          {/* <h5 class="see">⌄</h5> */}
+          <h5 class="see">❤️</h5>
         </div>
 
-        <div class="about" id="tab2">
+        <div class="form-container">
+          <button id="fb-btn" class="feedback" type="button" onClick={this.expandForm}><img src={fb_button} /></button>
+          <div id = "form-holder" class="form-holder">
+            <div class="close">
+              <button type="button"  onClick={this.collapseForm}>
+                <img src={close_btn} />
+              </button>
+            </div>
+            <form class="form" id="form"  action="" onSubmit={this.sendEmail}>
+              <div class="input-wrapper">
+              <label for="fname">Appreciate any feedback to improve! 🙏 This will be an anonymous message. Or send me a hello! </label>
+              </div>
+              <div class="input-wrapper">
+              <textarea id="fbText" name="message"></textarea>
+              </div>
+            <div class="send">
+            <button class="send" type="submit">
+              <img src={send_btn} />
+            </button>
+            </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="project" id="tab2" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
+        <h2 class="title3" >Projects 🔧</h2>
+        <div class="line"></div>
+
+          <div class="buttons">
+              <Link to={"/game"}>
+            <button  type="button">
+              <img src={gol_button} />
+            </button>
+            </Link>
+            <Link to={"/calc"}>
+            <button class="button2" type="submit" name="gc" value="gc">
+              <img src={gc_button} />
+            </button>
+            </Link>
+            <Link to={"/virtualbg"}>
+            <button type="button">
+              <img src={vb_button} />
+            </button>
+            </Link>
+            <Link to={"/predict"}>
+            <button type="button">
+              <img src={pr_button} />
+            </button>
+            </Link>
+          </div>
+
+          <div class="more">
+              <Link to="/projects">
+            <a class="btn btn-lg btn-success" href="#" role="button">
+              See More
+            </a>
+            </Link>
+          </div>
+        </div>
+
+
+        <div class="about" id="tab3" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
           <h2 class="title">About Me 🙂</h2>
           <div class="line"></div>
           <div class="row">
             <div class="col-lg-6">
               <div class="para">
                 <p>
-                  👋 Hello there! I'm a passionate software developer on a mission to craft innovative solutions and bring ideas to life through code. <br />
+                  👋 Greetings! I'm a passionate software developer on a mission to craft innovative solutions and bring ideas to life through code. <br />
                   📷 I love visiting new places, taking photos of the scenary and the culture. Below are some pictures I took when traveling around Vietnam.
                 </p>
               </div>
@@ -95,8 +199,8 @@ export default class InitMain extends Component {
           <img src={pic} alt="Vietnam Corner"></img>
         </div>
 
-        <div class="edu" id="tab3">
-          <h2 class="title2">Education <span class="grey">&</span> Experience 📖</h2>
+        <div class="edu" id="tab4" >
+          <h2 class="title2" data-aos="fade-left" data-aos-duration="3000">Education <span class="grey">&</span> Experience 📖</h2>
           <div class="line"></div>
           <div class="edu-tl">
           <section id="timeline">
@@ -150,11 +254,10 @@ export default class InitMain extends Component {
               </div>
 
               <div class="tl-content">
-                <h1 class="carerev-font">CareRev</h1>
+                <h1 class="carerev-font">CareRev<br/> Los Angeles (Remote)</h1>
                 <p>
-                Worked as a Support Engineer and Associate Software Engineer for over 2 years.<br/>
-                Provided software implementations and patches to existing and new features.
-                Main Stacks: Ruby, Ruby on Rails.
+                Worked as a Support Engineer and Associate Software Engineer for 2+ years.<br/>
+                Main Stacks: Ruby, Ruby on Rails, PostgreSQL, AWS
                 </p>
               </div>
 
@@ -165,7 +268,7 @@ export default class InitMain extends Component {
 
         </div>
 
-        <div class="project" id="tab4">
+        {/* <div class="project" id="tab4">
         <h2 class="title3">Projects 🔧</h2>
         <div class="line"></div>
 
@@ -199,13 +302,11 @@ export default class InitMain extends Component {
             </a>
             </Link>
           </div>
-        </div>
+        </div> */}
 
         <div class="ft">
           <footer class="footer">
             <p>
-              This is not the final version and might be updated in the future.
-              <br />
               You can view the web source code on <a href="https://github.com/dmho18/personal-website" target="_blank" rel="noopener noreferrer">Github</a>.
             </p>
           </footer>

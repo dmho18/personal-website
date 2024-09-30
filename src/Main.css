@@ -1,8 +1,30 @@
 
 h4{
     color:gray;
+    padding-top: 1.5%;
     padding-left: 8%;
     font-family: Gidolinya;
+    text-shadow: 1px 4px 5px #3CAEA3;
+}
+.see {
+    font-size: 40px;
+    color: gray;
+    animation: MoveUpDown 1s linear infinite;
+    position: absolute;
+    left: 48%;
+}
+
+.exp {
+    font-family: Gidole;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 270px;
+  }
+  50% {
+    bottom: 220px;
+  }
 }
 
 .nav-item{
@@ -21,16 +43,17 @@ h4{
 
 .header {
     background-color: white;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #e5e5e5;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    border-bottom: 0.1px solid #e5e5e5;
     display: flex;
     flex-direction: row;
-    
+    box-shadow: 0 1px 3px grey;
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 13px;
 }
 
-
-nav{
+nav {
     padding-right: 8%;
 }
 
@@ -42,7 +65,6 @@ nav{
 }
 
 .header :last-child {
-
     margin-left: auto;
     color: grey;
 }
@@ -51,7 +73,6 @@ nav{
     background-color: #3CAEA3;
     color: white;
 }
-
 
 .para p{
     font-size: 1.4em;
@@ -66,7 +87,7 @@ nav{
 
 .intro {
     padding-top: 20%;
-    padding-bottom: 195px;
+    padding-bottom: 30%;
     text-align: center;
 }
 
@@ -78,6 +99,7 @@ nav{
     font-weight: bolder;
     text-decoration: underline;
     font-family: Gidole;
+    color: #3CAEA3
 }
 
 .grey{
@@ -173,8 +195,12 @@ img {
     padding-top: 5%;
 }
 
+.project {
+    padding-bottom: 20%;
+}
+
 .about {
-    padding-bottom: 25%;
+    padding-bottom: 20%;
 }
 
 .timeline {
@@ -183,13 +209,12 @@ img {
 }
 
 .edu {
-    padding-bottom: 25%;
+    padding-bottom: 13%;
 }
 
 
 .buttons {
-    /* display: inline-block; */
-    padding-top: 10%;
+    padding-top: 5%;
     text-align: center;
     justify-items: center;
 }
@@ -202,12 +227,11 @@ button {
 }
 
 button:hover {
-
     animation: hvr-bob 5s infinite;
 }
 
 .more {
-    padding-top: 13%;
+    padding-top: 5%;
     text-align: center;
 }
 
@@ -228,4 +252,77 @@ footer {
     padding-top: 19px;
     color: #777;
     border-top: 1px solid #e5e5e5;
+}
+
+.feedback {
+    z-index: 1000;
+    position: fixed;
+    bottom: 20px;
+    right: 26px;
+    width: 95px;
+    height: 95px;
+    display: block;
+}
+
+.form-holder{
+    border-radius: 20px;
+    position:relative;
+    display: none;
+    float: right;
+    width: 35%;
+    height: 45%;
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    z-index: 1000;
+    font-size: 30;
+  }
+.form {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+    background-image: url("./assets/png/feedback-box.png");
+    background-size: 100% 100%;
+}
+
+.input-wrapper{
+    width:100%;
+    color:#fff;
+    min-width:40px;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 7.5%;
+}
+
+
+.input-wrapper label{
+    padding-top: 3%;
+    color: #3CAEA3;
+    font-weight: bold;
+    font-family: Gidole;
+ 
+}
+textarea {
+    padding-right: 10%;
+    font-size:15px;
+    width: 90%;
+    height: 90px;
+    color: gray;
+}
+
+.close button{
+    width: 10%;
+    float: right;
+    margin-top: 1%;
+    margin-right: 4.5%;
+    outline: none;
+}
+.close button:hover {
+    animation: none;
+}
+.send{
+    width: 38%;
+    margin-top: 5px;
+    margin-left: 25%;
+    outline: none;
 }

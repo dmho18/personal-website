@@ -10,7 +10,6 @@ import Resume from "./resume";
 import Projects from "./projects";
 import VirtualBackground from "./virtualbg"
 import PredictRating from "./predict";
-
 import "./Main.css";
 import "./timeline.css";
 

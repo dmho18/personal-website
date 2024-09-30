@@ -22,7 +22,7 @@ export default class App extends Component {
     this.timeoutHandle = setTimeout(() => {
       // Add your logic for the transition
       this.setState({ component: <Main /> });
-    }, 1700);
+    }, 1314);
   }
   
 

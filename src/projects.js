@@ -35,10 +35,10 @@ export default class Projects extends Component {
         </p>
 
         <div class="loadResult">
-              <Link to="/">
-            <a class="btn btn-lg btn-success" href="#" role="button">
-              Home
-            </a>
+            <Link to="/">
+              <a class="btn btn-lg btn-success" href="#" role="button">
+                Home
+              </a>
             </Link>
           </div>
         
