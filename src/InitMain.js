@@ -268,42 +268,6 @@ export default class InitMain extends Component {
 
         </div>
 
-        {/* <div class="project" id="tab4">
-        <h2 class="title3">Projects 🔧</h2>
-        <div class="line"></div>
-
-          <div class="buttons">
-              <Link to={"/game"}>
-            <button  type="button">
-              <img src={gol_button} />
-            </button>
-            </Link>
-            <Link to={"/calc"}>
-            <button class="button2" type="submit" name="gc" value="gc">
-              <img src={gc_button} />
-            </button>
-            </Link>
-            <Link to={"/virtualbg"}>
-            <button type="button">
-              <img src={vb_button} />
-            </button>
-            </Link>
-            <Link to={"/predict"}>
-            <button type="button">
-              <img src={pr_button} />
-            </button>
-            </Link>
-          </div>
-
-          <div class="more">
-              <Link to="/projects">
-            <a class="btn btn-lg btn-success" href="#" role="button">
-              See More
-            </a>
-            </Link>
-          </div>
-        </div> */}
-
         <div class="ft">
           <footer class="footer">
             <p>
