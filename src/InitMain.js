@@ -268,8 +268,11 @@ export default class InitMain extends Component {
             </a>
           </section>
           </div>
-
-
+        </div>
+        <div class="top">
+          <a class="btn btn-lg btn-success" role="button" data-toggle="tab" href="#tab1">
+            Scroll to Top
+          </a>
         </div>
 
         <div class="ft">

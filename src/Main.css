@@ -91,6 +91,9 @@ nav {
     padding-bottom: 30%;
     text-align: center;
 }
+.top {
+    text-align: center;
+}
 
 .big{
     font-size: 120%;
@@ -109,7 +112,7 @@ nav {
 }
 
 
-.intro .btn, .more .btn {
+.intro .btn, .more .btn, .top .btn {
     padding: 14px 24px;
     font-size: 21px;
     font-weight: bolder;
@@ -118,7 +121,7 @@ nav {
     color: #3CAEA3;
 }
 
-.intro .btn:hover, .more .btn:hover {
+.intro .btn:hover, .more .btn:hover, .top .btn:hover{
     background-color: #3CAEA3;
     border: 2px solid #3CAEA3;
     color: white;
@@ -213,7 +216,7 @@ img {
 
 .edu {
     padding-top: 10%;
-    padding-bottom: 20%;
+    padding-bottom: 15%;
 }
 
 
