@@ -194,7 +194,7 @@ export default class InitMain extends Component {
                   &nbsp; love:&emsp;&emsp;&emsp;&nbsp;[boba, traveling, backpacking];
                   <br />
                   &nbsp;languages: &emsp;[English, Vietnamese, Mandarin, Cantonese]; <br />
-                  &nbsp;countries: &emsp;[US, Vietnam, Taiwan, Malaysia, Singapore]; <br />
+                  &nbsp;countries: &emsp;[U.S, Vietnam, Taiwan, Malaysia, Singapore]; <br />
                   &#x0007D;
                 </p>
               </div>
