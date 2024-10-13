@@ -103,7 +103,7 @@ export default class InitMain extends Component {
           <p class="lead">
             <span class="big">My name is</span> <span class="bigger">Danh</span>.
             <br />
-            <div class="exp">This page was made possible by React, Javascript, HTML, CSS and Bootstrap </div>
+            <div class="exp">This page was made possible by React, Javascript, HTML, CSS, Bootstrap and Firebase</div>
           </p>
           {/* <h5 class="see">⌄</h5> */}
           <h5 class="see">❤️</h5>
@@ -186,11 +186,10 @@ export default class InitMain extends Component {
               <div class="para">
                 <p>
                   <span class="bigger">Danh Ho</span>: &#x0007B; <br />
-                  &nbsp; love:&emsp;&emsp;&emsp;&nbsp;[boba, traveling, backpacking];{" "}
+                  &nbsp; love:&emsp;&emsp;&emsp;&nbsp;[boba, traveling, backpacking];
                   <br />
-                  &nbsp; languages:&emsp;[English, Chinese, Vietnamese]; <br />
-                  &nbsp; skills: &emsp;&emsp;&nbsp; [Ruby, Rails, C++, Python,
-                  React]; <br />
+                  &nbsp;languages: &emsp;[English, Vietnamese, Mandarin, Cantonese]; <br />
+                  &nbsp;countries: &emsp;[US, Vietnam, Taiwan, Malaysia, Singapore]; <br />
                   &#x0007D;
                 </p>
               </div>
@@ -211,7 +210,7 @@ export default class InitMain extends Component {
                 <img class= "pcc-logo" src={pcc_logo} />
               </div>
               <div class="tl-year">
-                <p>2018</p>
+                {/* <p>2018</p> */}
               </div>
 
               <div class="tl-content">
@@ -231,7 +230,7 @@ export default class InitMain extends Component {
               </div>
               
               <div class="tl-year">
-                <p>2020</p>
+                {/* <p>2020</p> */}
               </div>
 
               <div class="tl-content">
@@ -250,14 +249,14 @@ export default class InitMain extends Component {
               </div>
               
               <div class="tl-year">
-                <p>2021 - 2023</p>
+                {/* <p>2021 - 2023</p> */}
               </div>
 
               <div class="tl-content">
                 <h1 class="carerev-font">CareRev<br/> Los Angeles (Remote)</h1>
                 <p>
                 Worked as a Support Engineer and Associate Software Engineer for 2+ years.<br/>
-                Main Stacks: Ruby, Ruby on Rails, PostgreSQL, AWS
+                Maintains the highest standards of productivity through SDLC.
                 </p>
               </div>
 
