@@ -73,7 +73,7 @@ nav {
 .nav-item .nav-link:hover {
     background-color: #3CAEA3;
     color: white;
-    box-shadow: 0 1px 3px #3CAEA3;
+    box-shadow: 0 1px 3px #ae3c47;
     border-radius: 18px
 }
 
