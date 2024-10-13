@@ -197,10 +197,12 @@ img {
 }
 
 .project {
+    padding-top: 10%;
     padding-bottom: 20%;
 }
 
 .about {
+    padding-top: 10%;
     padding-bottom: 20%;
 }
 
@@ -210,7 +212,8 @@ img {
 }
 
 .edu {
-    padding-bottom: 13%;
+    padding-top: 10%;
+    padding-bottom: 20%;
 }
 
 

@@ -10,6 +10,8 @@ import send_btn from "./assets/png/send.png"
 import pcc_logo from "./assets/png/pcclogo.png";
 import ucsd_logo from "./assets/png/ucsdlogo.png";
 import carerev_logo from "./assets/png/carerev.png";
+import { SERVICE_ID, TEMPLATE_ID, USER_ID } from "./Constants"
+
 
 import {Link} from "react-router-dom";
 import emailjs from 'emailjs-com';
@@ -103,10 +105,13 @@ export default class InitMain extends Component {
           <p class="lead">
             <span class="big">My name is</span> <span class="bigger">Danh</span>.
             <br />
-            <div class="exp">This page was made possible by React, Javascript, HTML, CSS, Bootstrap and Firebase</div>
+            <div class="exp">This page was made possible by React, Javascript, HTML, CSS, Bootstrap and Firebase ❤️</div>
           </p>
-          {/* <h5 class="see">⌄</h5> */}
-          <h5 class="see">❤️</h5>
+          <Link to={"/resume"}>
+            <a class="btn btn-lg btn-success" href="" role="button">
+              My Resume
+            </a>
+          </Link>
         </div>
 
         <div class="form-container">
@@ -270,6 +275,7 @@ export default class InitMain extends Component {
         <div class="ft">
           <footer class="footer">
             <p>
+              Made By Danh <br/>
               You can view the web source code on <a href="https://github.com/dmho18/personal-website" target="_blank" rel="noopener noreferrer">Github</a>.
             </p>
           </footer>
