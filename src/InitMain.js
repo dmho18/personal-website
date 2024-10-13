@@ -139,7 +139,7 @@ export default class InitMain extends Component {
         </div>
 
         <div class="project" id="tab2">
-        <h2 class="title3" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700" >Projects 🔧</h2>
+        <h2 class="title3" data-aos="fade-left" data-aos-duration="1000" >Projects 🔧</h2>
         <div class="line"></div>
 
           <div class="buttons">
@@ -176,7 +176,7 @@ export default class InitMain extends Component {
 
 
         <div class="about" id="tab3">
-          <h2 class="title"  data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">About Me 🙂</h2>
+          <h2 class="title"  data-aos="fade-right" data-aos-duration="1000">About Me 🙂</h2>
           <div class="line"></div>
           <div class="row">
             <div class="col-lg-6">
